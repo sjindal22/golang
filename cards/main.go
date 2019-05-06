@@ -6,10 +6,19 @@ func main() {
 
 	//	var card string = "Ace of Spades"
 	// := is used only during initialization
+
+	// Basic declaration and assignment of the variable
 	card := "Ace of Spades"
-	newCard := newCard()
-	fmt.Println(newCard)
+	anotherCard := newCard()
+	fmt.Println(anotherCard)
 	fmt.Println(card)
+
+	// Using slices
+	multipleCards := []string{"Ace of dimaond", card, anotherCard}
+	for i, card := range multipleCards {
+		fmt.Println(i, card)
+	}
+
 }
 
 /*
