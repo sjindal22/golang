@@ -7,7 +7,7 @@ executable file. Therefore, you can run and test your code right away.
 package main
 
 /*
-format, abbreviated as format, is a standard go lang library. And by making
+fmt, abbreviated as format, is a standard go lang library. And by making
 an import of the library, you are letting package main access all of its functions.
 */
 
@@ -19,5 +19,8 @@ access all code with in the library.
 import "fmt"
 
 func main() {
+
+	cards := "Ace of Spades"
+	fmt.Println(cards)
 	fmt.Println("Hi there!")
 }
