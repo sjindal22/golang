@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"io/ioutil"
+	"strings"
+)
 
 // Create a new type deck which is a slice
 // of strings but with some extended functionalities.
@@ -31,4 +35,17 @@ func (d deck) printCards() {
 
 func deal(d deck, handSize int) (deck, deck) {
 	return d[:handSize], d[handSize:]
+}
+
+// https://golang.org/pkg/strings/#Join
+// a function named toString() that takes in a slice of string as the receiver
+// and returns a string type output
+func (d deck) toString() string {
+
+	// This <return strings.Join(d, ",")> statement also worked
+	return strings.Join([]string(d), ",")
+}
+
+func (d deck) saveToDrive(filename string) error {
+	return ioutil.WriteFile(filename, []byte(d.toString()), 0666)
 }

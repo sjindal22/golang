@@ -20,4 +20,8 @@ func main() {
 	fmt.Println("Cards after dealing")
 	hand.printCards()
 	remainingCards.printCards()
+
+	fmt.Println(cards.toString())
+
+	fmt.Println(cards.saveToDrive("current_deck"))
 }
