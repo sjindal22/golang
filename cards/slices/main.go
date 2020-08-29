@@ -24,4 +24,7 @@ func main() {
 	fmt.Println(cards.toString())
 
 	fmt.Println(cards.saveToDrive("current_deck"))
+
+	cardsRetrieved := newDeckFromDisk("current_deck")
+	cardsRetrieved.printCards()
 }
