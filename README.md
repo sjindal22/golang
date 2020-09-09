@@ -1,5 +1,5 @@
 # Introduction
-The source code of the lecture is [here][https://github.com/StephenGrider/GoCasts).
+The source code of the lecture is [here](https://github.com/StephenGrider/GoCasts).
 
 # Setup
 * Download GO package by clicking [here](https://golang.org/dl/).
